@@ -1,6 +1,5 @@
-
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
     {
@@ -84,6 +83,12 @@ const markup = images.reduce((html, { original, preview, description })=>{
 const galleryEL = document.querySelector('.gallery')
 galleryEL.insertAdjacentHTML('beforeend', markup);
 
+document.addEventListener('DOMContentLoaded', function() {
+  const gallery = new SimpleLightbox('ul.gallery a', {
+      captionsData: 'alt',
+      captionDelay: 250,
+  });
+});
 
 
 // galleryEL.addEventListener("click", selectColor);
