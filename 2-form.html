@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2-form.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    
+  <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-9a2b18da.css">
 </head>
 <body>
-    <ul class="gallery"></ul>
     <p><a href="./index.html">Go back</a></p>
-    <form class="feedback-form" autocomplete="off">
-        <label>
-          Email
-          <input type="email" name="email" autofocus />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="8"></textarea>
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    <script src="./js/2-form.js"></script>
+   <div class="backdrop ">
+        <div class="form">
+            <form class="feedback-form" autocomplete="off">
+                <div class="form-filt">
+                    <label class="form-label" >
+                      Email</label>
+                     <div class="form-input-wrap"> 
+                        <input type="email" name="email" class="form-input" autofocus />
+                    </div>
+                </div>
+                <div class="form-filt-comment">
+                    <label class="form-label">Message</label>
+                    <textarea  class="modal-messege" name="message" rows="8"></textarea>
+
+                </div>
+                <button type="submit" class="form-form-btn">Submit</button>
+              </form>
+        </div>
+   </div>
+    
 </body>
 </html>
