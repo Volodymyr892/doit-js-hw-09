@@ -69,7 +69,7 @@ const images = [
 const markup = images.reduce((html, { original, preview, description })=>{
     return(html +=`
     <li class="gallery-item">
-        <a class="gallery-link" href="#" data-source="${original}">
+        <a class="gallery-link" href="${original}">
               <img
                 class="gallery-image"
                 src= "${preview}"
