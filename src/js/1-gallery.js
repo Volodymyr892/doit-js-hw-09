@@ -72,8 +72,8 @@ const markup = images.reduce((html, { original, preview, description })=>{
         <a class="gallery-link" href="${original}">
               <img
                 class="gallery-image"
-                src= "${preview}"
-                alt= "${description}"
+                src="${preview}"
+                alt="${description}"
               />
             </a>
          </li>
@@ -89,18 +89,3 @@ document.addEventListener('DOMContentLoaded', function() {
       captionDelay: 250,
   });
 });
-
-
-// galleryEL.addEventListener("click", selectColor);
-// function selectColor(event){
-// event.preventDefault();
-
-// const target = event.target;
-// if (target.classList.contains('gallery-image')) {
-//     const largeImageSrc = target.getAttribute('data-source');
-    
-//     const instance = basicLightbox.create(`
-//     <img src= "${largeImageSrc}" alt="${target.getAttribute('alt')}">`);
-//     instance.show()
-// }     
-// };
