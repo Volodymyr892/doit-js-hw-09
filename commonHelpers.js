@@ -3,8 +3,8 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";import{S as i}from"./assets/
         <a class="gallery-link" href="${p}">
               <img
                 class="gallery-image"
-                src= "${a}"
-                alt= "${t}"
+                src="${a}"
+                alt="${t}"
               />
             </a>
          </li>
